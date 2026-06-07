@@ -1,4 +1,4 @@
-- [ ]Linear Algebra @[3b1b](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&pp=0gcJCbAEOCosWNin)
+- [ ] Linear Algebra @[3b1b](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&pp=0gcJCbAEOCosWNin)
 - [ ] Calculus @[3b1b](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 - [ ] Probability @[3b1b](https://www.youtube.com/watch?v=8idr1WZ1A7Q&list=PLZHQObOWTQDOjmo3Y6ADm0ScWAlEXf-fp)
 - [ ] Statistics @[3b1b](https://www.youtube.com/watch?v=zeJD6dqJ5lo&list=PLZHQObOWTQDOMxJDswBaLu8xBMKxSTvg8&pp=0gcJCbAEOCosWNin)
