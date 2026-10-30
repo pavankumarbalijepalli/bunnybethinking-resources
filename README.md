@@ -1,49 +1,55 @@
 # 🐇 @bunnybethinking — Resource Hub
 
-> A premium, dark-mode Link-in-Bio resource hub for the [@bunnybethinking](https://www.instagram.com/bunnybethinking/) Instagram handle. Hosted on **GitHub Pages**.
+Every roadmap, skill and guide mentioned in [@bunnybethinking](https://www.instagram.com/bunnybethinking/) posts and videos, in one place. Hosted on **GitHub Pages**.
 
-## ✨ Features
+Styled to match the AI Engineer Roadmap PDF: near-black background, mint + violet accents, Space Mono headings, `// comment` labels and left-accent cards.
 
-- **Sleek dark-mode design** — deep navy/violet palette with glassmorphism card effects
-- **Gradient typography** — violet → indigo → sky gradient on headings
-- **Animated avatar ring** — slowly spinning gradient border
-- **Stat counters** — animated on scroll (Posts, AI Tools, Topics)
-- **Featured banner** — shimmer sweep on hover
-- **4 Resource Sections** — Most Popular · AI Tools I Use · Learning Resources · Content
-- **Tilt effect** — subtle 3D card tilt on mouse hover (desktop)
-- **Ripple click** — smooth ripple animation on link card clicks
-- **Staggered card reveal** — cards fade up as they enter the viewport
-- **Fully accessible** — ARIA roles, labels, semantic HTML5
-- **SEO ready** — title tags, meta descriptions, Open Graph, Twitter Card
+## ➕ Adding a resource
+
+Everything is driven by **`resources.js`** — you never touch the HTML.
+
+1. Drop the file into `assets/` (or use an external URL).
+2. Add an object to `RESOURCES` in `resources.js`:
+
+```js
+{
+  section: 'roadmaps',            // id from SECTIONS
+  title: 'AI Engineer Roadmap',
+  desc: 'Zero to shipping real AI products.',
+  url: 'assets/roadmap_ai_engineer.pdf',
+  type: 'PDF',                    // optional label
+  badge: 'new',                   // optional — remove when it's no longer new
+  accent: 'mint',                 // optional: mint | violet | grey
+}
+```
+
+3. Commit and push. Cards are numbered automatically.
+
+Need a new category? Add an entry to `SECTIONS` at the top of `resources.js`.
+Search + filter chips appear automatically once there are 6+ resources.
+
+**Accent colours** (same legend as the roadmap): mint = do this first · violet = core skill · grey = optional / advanced.
 
 ## 📁 Structure
 
 ```
-bunnybethinking-resources/
-├── index.html    # Main page (semantic, SEO-optimised)
-├── styles.css    # Design system (tokens, components, animations)
-├── script.js     # Vanilla JS interactions
-└── README.md     # This file
+├── index.html      # Page shell (header, callout, footer)
+├── resources.js    # ← the only file you edit to add content
+├── script.js       # Renders sections/cards, search + filters
+├── styles.css      # Design tokens + components
+├── avatar.jpg
+└── assets/         # PDFs, skills, checklists
 ```
 
-## 🚀 Deployment (GitHub Pages)
+## 🚀 Deployment
 
-1. Push this repo to GitHub.
-2. Go to **Settings → Pages**.
-3. Set source to `main` branch, root `/`.
-4. Your site will be live at:  
-   `https://pavankumarbalijepalli.github.io/bunnybethinking-resources/`
+Settings → Pages → source `main`, root `/`. Live at  
+`https://pavankumarbalijepalli.github.io/bunnybethinking-resources/`
 
-## 🛠️ Tech Stack
+## 🛠️ Stack
 
-| Layer      | Technology        |
-|------------|-------------------|
-| Structure  | HTML5 (Semantic)  |
-| Styling    | Vanilla CSS       |
-| Logic      | Vanilla JS (ES6+) |
-| Fonts      | Google Fonts — Outfit + Inter |
-| Hosting    | GitHub Pages      |
+HTML5 · vanilla CSS · vanilla JS · Google Fonts (Space Mono + DM Sans)
 
 ---
 
-Made with 🐇 & ☕ by [@bunnybethinking](https://www.instagram.com/bunnybethinking/)
+AI is not that hard. We're just learning it wrong.
